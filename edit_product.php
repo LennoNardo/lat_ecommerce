@@ -42,3 +42,5 @@ WHERE id=$id";
     <input type="file" id="image" name="image"><br><br>
     <input type="submit" name="submit" value="Perbarui Produk">
 </form>
+
+<a href="add_product.php">Add Product</a>
