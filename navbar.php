@@ -1,7 +1,7 @@
 <nav class="navbar">
     <div class="nav-container">
         <div class="nav-logo">
-            <a href=".php">My E-Commerce</a>
+            <a href="index.php">Run E-Commerce</a>
         </div>
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
