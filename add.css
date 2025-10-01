@@ -64,6 +64,7 @@ a:hover {
 
 .form-actions {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
@@ -79,7 +80,11 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
-  width: auto;
+  width: 100%;
+}
+
+.form-actions input[type="submit"]:hover {
+  background: #1e7e34;
 }
 
 .btn-view {
@@ -92,6 +97,7 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
+  width: 100%;
 }
 
 .btn-view:hover {
