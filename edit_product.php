@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+include 'header.php';
 // Mendapatkan id produk yang ingin diedit
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -22,7 +23,7 @@ image='$image' WHERE id=$id";
 WHERE id=$id";
     }
     if ($conn->query($sql) === TRUE) {
-        echo "Produk berhasil diperbarui";
+        echo "<div>Produk berhasil diperbarui</div>";
     } else {
         echo "Error: " . $conn->error;
     }
@@ -40,7 +41,10 @@ WHERE id=$id";
         required><br><br>
     <label for="image">Gambar Produk:</label><br>
     <input type="file" id="image" name="image"><br><br>
-    <input type="submit" name="submit" value="Perbarui Produk">
+    <div class="form-actions">
+        <input type="submit" name="submit" value="Perbarui Produk">
+        <a href="view_products.php" class="btn-view">View</a>
+    </div>
 </form>
 
-<a href="add_product.php">Add Product</a>
+<?php include 'footer.php' ?>
