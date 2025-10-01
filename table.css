@@ -4,7 +4,7 @@ h2 {
 }
 
 .container {
-    max-width: 900px;
+    width: 80%;
     margin: auto;
     background: #fff;
     padding: 20px;
