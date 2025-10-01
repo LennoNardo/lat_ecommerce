@@ -26,8 +26,11 @@ if (isset($_POST['submit'])) {
     <input type="number" id="price" name="price" required><br><br>
     <label for="image">Gambar Produk:</label><br>
     <input type="file" id="image" name="image" required><br><br>
-    <input type="submit" name="submit" value="Tambah Produk">
+    <div class="form-actions">
+        <input type="submit" name="submit" value="Tambah Produk">
+        <a href="view_products.php" class="btn-view">View</a>
+    </div>
 </form>
-<a href="view_products.php ">View</a>
+
 
 <?php include 'footer.php' ?>
