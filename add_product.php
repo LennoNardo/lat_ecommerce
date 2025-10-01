@@ -10,13 +10,14 @@ if (isset($_POST['submit'])) {
     // Menyimpan data ke database
     $sql = "INSERT INTO products (name, description, price, image) VALUES ('$name','$description', '$price', '$image')";
     if ($conn->query($sql) === TRUE) {
-        echo "Produk berhasil ditambahkan";
+        echo "";
         move_uploaded_file($_FILES['image']['tmp_name'], $target);
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 }
 ?>
+
 <form method="POST" enctype="multipart/form-data">
     <label for="name" >Nama Produk:</label><br>
     <input type="text" id="name" name="name" required><br><br>
