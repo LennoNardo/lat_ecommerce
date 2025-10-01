@@ -17,20 +17,22 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-<form method="POST" enctype="multipart/form-data">
-    <label for="name" >Nama Produk:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="description">Deskripsi Produk:</label><br>
-    <textarea id="description" name="description" required></textarea><br><br>
-    <label for="price">Harga Produk:</label><br>
-    <input type="number" id="price" name="price" required><br><br>
-    <label for="image">Gambar Produk:</label><br>
-    <input type="file" id="image" name="image" required><br><br>
-    <div class="form-actions">
-        <input type="submit" name="submit" value="Tambah Produk">
-        <a href="view_products.php" class="btn-view">View</a>
-    </div>
-</form>
+<div>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="name">Nama Produk:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="description">Deskripsi Produk:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+        <label for="price">Harga Produk:</label><br>
+        <input type="number" id="price" name="price" required><br><br>
+        <label for="image">Gambar Produk:</label><br>
+        <input type="file" id="image" name="image" required><br><br>
+        <div class="form-actions">
+            <input type="submit" name="submit" value="Tambah Produk">
+            <a href="view_products.php" class="btn-view">View</a>
+        </div>
+    </form>
+</div>
 
 
 <?php include 'footer.php' ?>
