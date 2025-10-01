@@ -1,11 +1,9 @@
 <?php
 include 'config.php';
 include 'header.php';
-
 $message = '';
 $message_class = '';
 $product = null;
-
 // Mendapatkan id produk yang ingin diedit
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -13,14 +11,12 @@ if (isset($_GET['id'])) {
     $result = $conn->query($sql);
     $product = $result->fetch_assoc();
 }
-
 // Proses update
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $description = $_POST['description'];
     $price = $_POST['price'];
     $image = $_FILES['image']['name'];
-
     if ($image) {
         $target = "uploads/" . basename($image);
         move_uploaded_file($_FILES['image']['tmp_name'], $target);
@@ -35,7 +31,6 @@ if (isset($_POST['submit'])) {
                 SET name='$name', description='$description', price='$price' 
                 WHERE id=$id";
     }
-
     if ($conn->query($sql) === TRUE) {
         $message = "Data berhasil diperbarui ✅";
         $message_class = "success";
@@ -83,6 +78,5 @@ if (isset($_POST['submit'])) {
         </div>
     </form>
 </div>
-
-
 <?php include 'footer.php' ?>
+

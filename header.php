@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/edit.css">
-    <link rel="stylesheet" href="css/delete.css">
 </head>
 
 <body>

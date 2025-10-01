@@ -40,3 +40,4 @@ if (isset($_GET['id'])) {
     <a href="view_products.php" class="btn-delete-page">⬅ Kembali ke Daftar Produk</a>
 </div>
 <?php include 'footer.php' ?>
+
