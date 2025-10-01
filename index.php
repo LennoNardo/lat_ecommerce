@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <form method="POST" enctype="multipart/form-data">
-    <label for="name">Nama Produk:</label><br>
+    <label for="name" class="">Nama Produk:</label><br>
     <input type="text" id="name" name="name" required><br><br>
     <label for="description">Deskripsi Produk:</label><br>
     <textarea id="description" name="description" required></textarea><br><br>
@@ -28,3 +28,4 @@ if (isset($_POST['submit'])) {
     <input type="file" id="image" name="image" required><br><br>
     <input type="submit" name="submit" value="Tambah Produk">
 </form>
+<a href="view_products.php ">View</a>
