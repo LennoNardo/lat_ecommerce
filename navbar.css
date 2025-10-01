@@ -1,46 +1,86 @@
-/* Navbar utama */
+/* --- Styling untuk Navbar --- */
 .navbar {
-  background: #007bff;
-  padding: 12px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: block;
+  background-color: #2c3e50; /* Warna biru tua/navy yang profesional */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Bayangan halus */
+  padding: 10px 0; /* Padding atas dan bawah */
+  width: 100%;
+  position: sticky; /* Agar navbar tetap di atas saat scroll */
+  top: 0;
+  z-index: 1000; /* Pastikan navbar berada di atas konten lain */
 }
 
-/* Container */
 .nav-container {
+  max-width: 1200px; /* Batasi lebar kontainer (sesuaikan dengan lebar konten utama Anda) */
+  margin: 0 auto; /* Tengahkan kontainer */
+  padding: 0 20px; /* Padding samping untuk ruang di layar kecil */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pisahkan logo dan links */
+  align-items: center; /* Tengahkan vertikal */
+}
+
+/* --- Logo Styling --- */
+.nav-logo a {
+  color: #ffffff; /* Warna teks putih */
+  font-size: 1.8em; /* Ukuran font yang besar */
+  font-weight: 700; /* Tebal */
+  text-transform: uppercase; /* Huruf kapital semua */
+  letter-spacing: 1.5px; /* Jarak antar huruf */
+  transition: color 0.3s;
+}
+
+.nav-logo a:hover {
+  color: #007bff; /* Efek warna biru saat hover */
+}
+
+/* --- Navigation Links (Menu) --- */
+.nav-links {
+  list-style: none; /* Hilangkan bullet point */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Jadikan links sejajar horizontal */
   align-items: center;
 }
 
-/* Logo kiri */
-.nav-logo a {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* List menu kanan */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
 .nav-links li {
-  display: inline;
+  margin-left: 30px; /* Jarak antara setiap menu item */
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background 0.3s;
+.nav-links li a {
+  color: #bdc3c7; /* Warna abu-abu muda untuk link normal */
+  font-size: 1em;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  background: #0056b3;
+/* Efek Hover (Garis bawah animasi) */
+.nav-links li a:hover {
+  color: #ffffff; /* Warna teks putih saat hover */
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px; /* Posisi garis di bawah teks */
+  left: 0;
+  background-color: #007bff; /* Warna garis bawah */
+  transition: width 0.3s ease-out; /* Animasi lebar garis */
+}
+
+.nav-links li a:hover::after {
+  width: 100%; /* Garis muncul saat hover */
+}
+
+/* Style untuk link yang sedang aktif */
+.nav-links li a.active {
+  color: #007bff; /* Warna biru untuk link yang aktif */
+  font-weight: 600;
+}
+
+.nav-links li a.active::after {
+  width: 100%; /* Garis bawah tetap muncul untuk link aktif */
+  background-color: #007bff;
 }
