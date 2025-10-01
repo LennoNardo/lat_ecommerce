@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="add.css">
     <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
-    <?php include 'navbar.php' ?>
+
+
 <body>
+    <?php include 'navbar.php' ?>
