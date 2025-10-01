@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <form method="POST" enctype="multipart/form-data">
-    <label for="name" class="text-red">Nama Produk:</label><br>
+    <label for="name" >Nama Produk:</label><br>
     <input type="text" id="name" name="name" required><br><br>
     <label for="description">Deskripsi Produk:</label><br>
     <textarea id="description" name="description" required></textarea><br><br>
