@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 include 'config.php';
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -7,8 +8,7 @@ if (isset($_POST['submit'])) {
     $image = $_FILES['image']['name'];
     $target = "uploads/" . basename($image);
     // Menyimpan data ke database
-    $sql = "INSERT INTO products (name, description, price, image) VALUES ('$name',
-'$description', '$price', '$image')";
+    $sql = "INSERT INTO products (name, description, price, image) VALUES ('$name','$description', '$price', '$image')";
     if ($conn->query($sql) === TRUE) {
         echo "Produk berhasil ditambahkan";
         move_uploaded_file($_FILES['image']['tmp_name'], $target);
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <form method="POST" enctype="multipart/form-data">
-    <label for="name" class="">Nama Produk:</label><br>
+    <label for="name" class="text-red">Nama Produk:</label><br>
     <input type="text" id="name" name="name" required><br><br>
     <label for="description">Deskripsi Produk:</label><br>
     <textarea id="description" name="description" required></textarea><br><br>
@@ -29,3 +29,5 @@ if (isset($_POST['submit'])) {
     <input type="submit" name="submit" value="Tambah Produk">
 </form>
 <a href="view_products.php ">View</a>
+
+<?php include 'footer.php' ?>
