@@ -1,10 +1,10 @@
 a {
   text-decoration: none;
-  color: #007bff;
+  color: white;
 }
 
 a:hover {
-  color: #0056b3;
+  color: white;
 }
 
 .status-message {
@@ -74,7 +74,7 @@ textarea {
 input[type="text"]:focus,
 input[type="number"]:focus,
 textarea:focus {
-  border-color: #007bff;
+  border-color: white;
   outline: none;
 }
 
@@ -136,4 +136,12 @@ input[type="submit"]:hover {
 .btn-view:hover {
   background-color: #1e7e34;
   transform: translateY(-2px);
+}
+
+.preview-img {
+  display: block;
+  margin-top: 10px;
+  max-width: 150px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
