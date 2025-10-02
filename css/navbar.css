@@ -1,7 +1,13 @@
 .navbar {
+<<<<<<< HEAD:navbar.css
   background-color: #2c3e50;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   padding: 10px 0;
+=======
+  background-color: rgb(40, 167, 69); /* Warna biru tua/navy yang profesional */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Bayangan halus */
+  padding: 10px 0; /* Padding atas dan bawah */
+>>>>>>> 18be196edadbe338256adb212f238f486aa497cb:css/navbar.css
   width: 100%;
   position: sticky;
   top: 0;
@@ -27,7 +33,11 @@
 }
 
 .nav-logo a:hover {
+<<<<<<< HEAD:navbar.css
   color: #007bff;
+=======
+  color: white; /* Efek warna biru saat hover */
+>>>>>>> 18be196edadbe338256adb212f238f486aa497cb:css/navbar.css
 }
 
 .nav-links {
@@ -62,8 +72,13 @@
   height: 2px;
   bottom: -5px;
   left: 0;
+<<<<<<< HEAD:navbar.css
   background-color: #007bff;
   transition: width 0.3s ease-out;
+=======
+  background-color: white; /* Warna garis bawah */
+  transition: width 0.3s ease-out; /* Animasi lebar garis */
+>>>>>>> 18be196edadbe338256adb212f238f486aa497cb:css/navbar.css
 }
 
 .nav-links li a:hover::after {
@@ -71,11 +86,20 @@
 }
 
 .nav-links li a.active {
+<<<<<<< HEAD:navbar.css
   color: #007bff;
+=======
+  color: white; /* Warna biru untuk link yang aktif */
+>>>>>>> 18be196edadbe338256adb212f238f486aa497cb:css/navbar.css
   font-weight: 600;
 }
 
 .nav-links li a.active::after {
+<<<<<<< HEAD:navbar.css
   width: 100%;
   background-color: #007bff;
+=======
+  width: 100%; /* Garis bawah tetap muncul untuk link aktif */
+  background-color: white;
+>>>>>>> 18be196edadbe338256adb212f238f486aa497cb:css/navbar.css
 }
